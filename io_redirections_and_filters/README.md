@@ -14,4 +14,3 @@ This directory contains scripts for I/O redirections and filters:
 24-gifs: Lists all .gif files (from current directory and subdirectories) without their extension, sorted case-insensitively.
 25-acrostic: Decodes an acrostic by printing the first letter of each line from the input.
 26-the_biggest_fan: Parses TSV log input and displays the 11 hosts or IP addresses that made the most requests.
-
