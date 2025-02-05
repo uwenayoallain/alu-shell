@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# This script tells the story of /etc/passwd.
+# This script tells the story of /etc/passwd using a counter for gang number.
+count=0
 while IFS=: read -r username password uid gid info home shell; do
-  echo "The user $username is part of the $gid gang, lives in $home and rides $shell. ${uid}'s place is protected by the passcode $password, more info about the user here: $username"
+  echo "The user $username is part of the ${count} gang, lives in $home and rides $shell. ${count}'s place is protected by the passcode $password, more info about the user here: $username"
+  count=$((count+1))
 done < /etc/passwd
